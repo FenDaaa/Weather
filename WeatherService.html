@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<!-- saved from url=(0031)file:///C:/Lzh5/page/page5.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title>WeatherService</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+  <!-- <link rel="stylesheet" type="text/css" href="./src/css/page5.css"> -->
+  <link rel="stylesheet" type="text/css" href="./node_modules/weather-icons/css/weather-icons.min.css">
+  <!-- <link rel="stylesheet" type="text/css" href="./src/css/weather-icons.min.css"> -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.staticfile.org/ionicons/2.0.1/css/ionicons.min.css">
+  
+</head>
+<body>
+    <div class="weather-container">
+        <div class="weather-wrapped">
+            <div class="locator-search">
+                <p class="locator-road">净慧东道附近</p>&nbsp;<p class="locator-city-region">无锡市 新吴区</p>
+            </div>
+            <div class="weather-info">
+                <ul>
+                    <div class="first-info">
+                        <h1>9℃</h1>
+                        <h1 class="wi wi-day-sunny wi-flip-vertical"></h1>
+                    </div>
+                    <li>
+                        <h2>晴</h2>
+                    </li>
+                    <li><p>东风2级</p></li>
+                    <li><p>相对湿度 40%</p></li>
+                    <li><p>空气质量 99 良</p></li>
+                </ul>
+            </div>
+        </div>
+        <div class="weather-forecast">
+            <div class="forecast2hour">
+                <p>未来两小时不会下雨</p>
+            </div>
+        </div>
+        <div class="per-hour-container">
+            <div class="per-hour-lable">
+                逐小时预报
+            </div>
+            <div class="forecast-per-hour">
+                <div class="per-hour-1">
+                    <div>08:00</div>
+                    <div class="wi wi-day-sunny wi-flip-vertical"></div>
+                    <div>3℃</div>
+                </div>
+                <div class="per-hour-1">
+                    <div>09:00</div>
+                    <div class="wi wi-day-sunny wi-flip-vertical"></div>
+                    <div>3℃</div>
+                </div>
+                <div class="per-hour-1">
+                    <div>10:00</div>
+                    <div class="wi wi-day-sunny wi-flip-vertical"></div>
+                    <div>3℃</div>
+                </div>
+                <div class="per-hour-1">
+                    <div>11:00</div>
+                    <div class="wi wi-day-sunny wi-flip-vertical"></div>
+                    <div>3℃</div>
+                </div>
+                <div class="per-hour-1">
+                    <div>12:00</div>
+                    <div class="wi wi-day-sunny wi-flip-vertical"></div>
+                    <div>3℃</div>
+                </div>
+                <div class="per-hour-1">
+                    <div>13:00</div>
+                    <div class="wi wi-day-sunny wi-flip-vertical"></div>
+                    <div>3℃</div>
+                </div>
+            </div>
+        </div>
+        <div class="weather-forecast-future-15-container">
+            <div class="future-15day-lable">
+                未来15天
+            </div>
+            <div class="forecast-15-day">
+                <div class="15-day-1">
+                    <div>今天</div>
+                    <div class="forecast-date"><p>01/20</p></div>
+                    <div class="wi wi-day-sunny wi-flip-vertical"></div>
+                    <div>晴</div>
+                </div>
+                <div class="15-day-1">
+                    <div>明天</div>
+                    <div class="forecast-date"><p>01/21</p></div>
+                    <div class="wi wi-day-sunny wi-flip-vertical"></div>
+                    <div>晴</div>
+                </div>
+                <div class="15-day-1">
+                    <div>周一</div>
+                    <div class="forecast-date"><p>01/22</p></div>
+                    <div class="wi wi-day-sunny wi-flip-vertical"></div>
+                    <div>晴</div>
+                </div>
+                <div class="15-day-1">
+                    <div>周二</div>
+                    <div class="forecast-date"><p>01/23</p></div>
+                    <div class="wi wi-day-sunny wi-flip-vertical"></div>
+                    <div>晴</div>
+                </div>
+                <div class="15-day-1">
+                    <div>周三</div>
+                    <div class="forecast-date"><p>01/24</p></div>
+                    <div class="wi wi-day-sunny wi-flip-vertical"></div>
+                    <div>晴</div>
+                </div>
+            </div>
+            <div id="xcharts" class="xcharts">
+                <canvas id="myChart"></canvas>
+            </div>
+            <div class="forecast-15-day">
+                <div class="15-day-1">
+                    <div class="wi wi-day-sunny wi-flip-vertical"></div>
+                    <div>晴</div>
+                    <div><p>良</p></div>
+                </div>
+                <div class="15-day-1">
+                    <div class="wi wi-day-sunny wi-flip-vertical"></div>
+                    <div>晴</div>
+                    <div><p>中度污染</p></div>
+                </div>
+                <div class="15-day-1">
+                    <div class="wi wi-day-sunny wi-flip-vertical"></div>
+                    <div>晴</div>
+                    <div><p>中度污染</p></div>
+                </div>
+                <div class="15-day-1">
+                    <div class="wi wi-day-sunny wi-flip-vertical"></div>
+                    <div>晴</div>
+                    <div><p>轻度污染</p></div>
+                </div>
+                <div class="15-day-1">
+                    <div class="wi wi-day-sunny wi-flip-vertical"></div>
+                    <div>晴</div>
+                    <div><p>良</p></div>
+                </div>
+            </div>
+            <div class="view-forecast-15day">
+                <div class="bottom-lable">
+                    查看全部未来15天预报>
+                </div>
+            </div>
+        </div>
+
+        <div class="life-index-container">
+            <div class="life-index-label">
+                生活指数
+            </div>
+            <div class="life-index-list">
+                <div class="life-index-item icon ion-android-car">&nbsp;&nbsp;&nbsp;较适宜洗车</div>
+                <div class="life-index-item icon ion-ios-baseball">&nbsp;&nbsp;&nbsp;较适宜运动</div>
+                <div class="life-index-item icon ion-ios-medkit">&nbsp;&nbsp;&nbsp;教易发感冒</div>
+                <div class="life-index-item icon ion-ios-flower">&nbsp;&nbsp;&nbsp;极不易发过敏</div>
+            </div>
+        </div>
+        <div class="weather-forward">
+            <div>
+                转发天气
+            </div>
+        </div>
+
+        <div class="weather-bottom">
+            <div class="last-item wi wi-day-sunny wi-flip-vertical">&nbsp;中国无锡天气</div>
+            <div class="last-item-1">本服务由中国气象局公共气象服务中心提供</div>
+            <div class="last-item-1">客服热线： 400-6000-121</div>
+        </div>
+        
+    </div>
+</body>
+<!-- <script type="text/javascript" src="./dist/js/xcharts.bundle.js"></script> -->
+</html> 
