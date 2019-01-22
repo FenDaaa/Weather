@@ -1,5 +1,5 @@
-
 import '../css/page5.css';
+import '../../node_modules/weather-icons/css/weather-icons.css';
 import printMe from './print.js';
 if (module.hot) {
     module.hot.accept('./print.js', function() {
@@ -7,6 +7,8 @@ if (module.hot) {
       printMe();
     })
   }
+  console.log(process.env.NODE_ENV);
+  console.log(__dirname);
 const F2 = require('@antv/f2');
 const data = [
       {
